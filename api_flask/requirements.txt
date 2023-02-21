@@ -1,0 +1,8 @@
+Flask
+Flask-Security
+Flask-SQLAlchemy
+flask-login
+flask-migrate
+Flask-Cors
+folium
+email_validator
