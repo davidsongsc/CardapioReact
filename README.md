@@ -6,7 +6,7 @@ Este é um projeto de cardápio digital que usa React no front-end e Flask no ba
 
 - React
 - Flask
-
+- SQLite
 ## Screenshots
 
 ![Tela inicial do cardápio](screenshots/projeto_image1.png)
