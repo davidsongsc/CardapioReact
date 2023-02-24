@@ -1,10 +1,10 @@
 import React from 'react';
 import Produto from './Produtos';
 
-function Cardapio({ produtos }) {
+function Favoritos({ produtos }) {
   return (
-    <div>
-      <h1>Cardápio</h1>
+    <div className='c-div-cardapio'>
+      <h1 className='titulo-cardapio'>Os Preferidos</h1>
       <div className="cardapio">
         {produtos.map((produto) => (
           <Produto key={produto.id} produto={produto} />
@@ -14,4 +14,4 @@ function Cardapio({ produtos }) {
   );
 }
 
-export default Cardapio;
+export default Favoritos;

@@ -1,0 +1,247 @@
+@media only screen and (max-width: 680px) {
+
+	.li-lojas-disponiveis {
+		display: none;
+	}
+
+	#logo-bar {
+		display: none;
+	}
+
+	header {
+		width: -webkit-fill-available;
+		margin: -15px 0 0 0;
+	}
+
+
+	header nav ul li {
+		width: 100%;
+		padding: 2px 0;
+		font-family: "Archivo", cursive;
+		font-size: 19px;
+		font-weight: 200;
+	}
+
+	.lista-planos {
+		width: 232px;
+		margin: 5px -1px 0 72px;
+	}
+
+	div div div h1 {
+		text-align: center;
+	}
+
+	.Principal {
+		padding: 5px 0;
+	}
+
+	.produtos-card {
+		width: 145px;
+	}
+
+	.produto-imagem {
+		margin: 20px 0 0 0;
+		width: 135px;
+		height: 105px;
+	}
+
+	.produtos-card h2 {
+		font-size: 19px;
+		margin: 13px 0px 113px -203px;
+		font-weight: 400;
+		width: 182px;
+	}
+
+	.produtos-card h3 {
+		display: none;
+	}
+
+	.classificacao-img {
+		height: 20px;
+	}
+
+	.produtos-card h4 {
+		font-size: 17px;
+		margin: 214px 0 0 0;
+	}
+
+	.produtos-card p {
+		font-size: 10px;
+		margin: 137px 0 0 -203px;
+		width: 179px;
+		text-indent: 41px;
+		letter-spacing: 2px;
+	}
+}
+
+@media only screen and (min-width:681px) and (max-width: 1339px) {
+	body {
+		background-color: black;
+		padding: 0;
+		margin: 0;
+	}
+	header{
+		width: max-content;
+	}
+	.c-div-cardapio{
+		margin: -253px 0 0 0;
+
+	}
+	.titulo-cardapio {
+		font-size: 100px;
+		color: white;
+		text-align: center;
+	}
+
+	#logo-bar {
+		display: relative;
+
+	}
+
+	#logoH {
+		z-index: 3;
+		width: 166px;
+		right: 20px;
+		position: absolute;
+		text-transform: capitalize;
+	}
+
+	#logo-bar #logo h1 {
+		color: #ffffff;
+		background-color: #1f1e1d;
+		font-size: 89px;
+		z-index: 1;
+	}
+
+	header nav {
+		height: 234px;
+	}
+
+	#logo-bar #info {
+		margin: 46px 24px;
+	}
+
+	header nav ul {
+		/* float: right; */
+		/* display: flex; */
+		height: 20px;
+
+	}
+
+	header nav ul li {
+		width: 100%;
+		padding: 10px 0;
+		font-family: "Archivo", cursive;
+		font-size: 25px;
+		font-weight: 200;
+	}
+
+	.li-lojas-disponiveis {
+		display: none;
+	}
+
+	.produtos-card {
+		width: 305px;
+	}
+
+	.produtos-card .produto-imagem {
+		width: 127px;
+		height: 127px;
+		margin: 25px 0 0 0;
+	}
+
+	.produtos-card h2 {
+		position: absolute;
+		margin: 13px 0 0 -191px;
+	}
+
+	.produtos-card h4 {
+		font-size: 24px;
+		margin: 84px 0 0 0;
+	}
+	.produtos-card h3{
+		display: none;
+	}
+	.produtos-card p {
+		width: 158px;
+		margin: 61px 0 0 -27px;
+	}
+}
+
+
+@media only screen and (min-width:1340px) {
+	header {
+		margin: -15px 0 0 0;
+	}
+
+	nav ul {
+		display: flex;
+		justify-content: right;
+	}
+
+	nav ul li {
+		margin: 0 10px;
+	}
+
+	nav ul li a {
+		font-size: 30px;
+		padding: 5px;
+	}
+
+	nav ul li a:hover {
+		background-color: black;
+		border-radius: 15px;
+	}
+
+	.lojas-header {
+		background-color: rgb(0, 0, 0);
+		padding: 20px 0;
+		margin: -15px 0;
+	}
+
+	.li-lojas-disponiveis {
+		display: flex;
+		justify-content: space-evenly;
+
+	}
+
+	.li-lojas-disponiveis h1 {
+		color: white;
+		background-color: black;
+		border-top-left-radius: 220px;
+		border-top-right-radius: 220px;
+		border-bottom-left-radius: 523px;
+		border-bottom-right-radius: 523px;
+		font-family: 'Tilt Prism', cursive;
+		text-decoration: underline 10px;
+		margin-top: -63px;
+		padding: 30px 25px;
+	}
+
+	.li-lojas-disponiveis #logo {
+		background-color: #dda53d;
+		border-radius: 20px;
+		padding: 5px;
+		text-align: center;
+	}
+
+	.li-lojas-disponiveis #logo img {
+		width: 110px;
+		height: 110px;
+	}
+
+	.produtos-card {
+
+		max-width: 600px;
+	}
+
+	.titulo-cardapio {
+		background-color: whitesmoke;
+		text-align: center;
+		font-size: 69px;
+	}
+
+	.produtos-card h3 {
+		display: none;
+	}
+}

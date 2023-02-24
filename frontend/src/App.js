@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import Cardapio from './components/Cardapio';
+import Favoritos from './components/Favoritos';
 import { css } from '@emotion/react';
 import { ClipLoader } from 'react-spinners';
 import './styles/principal.css';
 import './styles/media.css';
+
 
 function App() {
   const [produtos, setProdutos] = useState([]);
@@ -25,14 +26,14 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <div className="Principal">
       {isLoading ? (
         <div className="loading">
           <ClipLoader color={'#FF801F'} loading={isLoading} css={override} size={200} />
 
         </div>
       ) : (
-        <Cardapio produtos={produtos} />
+        <Favoritos produtos={produtos} />
       )}
     </div>
   );
