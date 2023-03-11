@@ -18,13 +18,6 @@ Desktop
 
 ![Tela inicial do cardápio](screenshots/projeto_imagem_novo3.png)
 
-Mobile
-
-![Tela inicial do cardápio](screenshots/img1.jpeg)
-
-![Tela inicial do cardápio ](screenshots/img2.jpeg)
-
-![Tela inicial do cardápio](screenshots/img3.jpeg)
 
 ## Instalação
 
