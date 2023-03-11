@@ -4,13 +4,20 @@ from werkzeug.security import check_password_hash, generate_password_hash
 from flask_login import UserMixin, login_user, logout_user, current_user, login_required, LoginManager
 from flask_cors import CORS
 from base import *
+import json
 import folium
+
+data = None
+
+with open('../frontend/src/configure.json') as f:
+    data = json.load(f)
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///../base.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SECRET_KEY'] = '*#rh*3rh#$y*rhj(&h#'
-CORS(app, resources={r"/*": {"origins": "http://127.0.0.1:3000"}})
+CORS(app, resources={r"/*": {"origins": f"http://{data['ip']}:3000"}})
+
 
 
 

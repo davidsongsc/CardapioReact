@@ -1,19 +1,31 @@
 # Cardápio digital
+VERSÂO 1.02.00
 
-Este é um projeto de cardápio digital que usa React no front-end e Flask no back-end.
+Este é um projeto de cardápio digital que usa React no front-end e Flask no back-end. Antes de tudo, mude o IP do projeto no arquivo 'configure.json'.
+você pode encontralo em 'frontend/src/configure.json'. Lembrando que a API 
+Flask ultiliza o ip deste arquivo json.
 
 ## Tecnologias usadas
 
 - React
 - Flask
-
+- SQLite
+- Python
 ## Screenshots
+Desktop
+![Tela inicial do cardápio](screenshots/projeto_imagem_novo1.png)
 
-![Tela inicial do cardápio](screenshots/projeto_image1.png)
+![Tela inicial do cardápio ](screenshots/projeto_imagem_novo2.png)
 
-![Tela inicial do cardápio Tablets](screenshots/projeto_image2.png)
+![Tela inicial do cardápio](screenshots/projeto_imagem_novo3.png)
 
-![Tela inicial do cardápio Smartphones](screenshots/projeto_image3.png)
+Mobile
+
+![Tela inicial do cardápio](screenshots/img1.jpeg)
+
+![Tela inicial do cardápio ](screenshots/img2.jpeg)
+
+![Tela inicial do cardápio](screenshots/img3.jpeg)
 
 ## Instalação
 
@@ -38,4 +50,4 @@ Este é um projeto de cardápio digital que usa React no front-end e Flask no ba
     cd ../frontend
     npm start
     ```
-6. Acesse o cardápio em http://127.0.0.1:3000
+6. Acesse o cardápio em http://seuip:3000

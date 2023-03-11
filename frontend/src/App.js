@@ -4,6 +4,8 @@ import { css } from '@emotion/react';
 import { ClipLoader } from 'react-spinners';
 import './styles/principal.css';
 import './styles/media.css';
+import Header from './components/Header';
+import dados from './configure.json';
 
 
 function App() {
@@ -17,7 +19,7 @@ function App() {
 
   useEffect(() => {
     async function fetchProdutos() {
-      const response = await fetch('http://127.0.0.1:5000/produtos');
+      const response = await fetch(`http://${dados.ip}:5000/produtos`);
       const data = await response.json();
       setProdutos(data.produtos);
       setIsLoading(false);
@@ -26,16 +28,21 @@ function App() {
   }, []);
 
   return (
-    <div className="Principal">
-      {isLoading ? (
-        <div className="loading">
-          <ClipLoader color={'#FF801F'} loading={isLoading} css={override} size={200} />
+    <>
+  
+    <Header />
+      <div className="Principal">
+        {isLoading ? (
+          <div className="loading">
+            <ClipLoader color={'#FF801F'} loading={isLoading} css={override} size={200} />
 
-        </div>
-      ) : (
-        <Favoritos produtos={produtos} />
-      )}
-    </div>
+          </div>
+        ) : (
+          
+          <Favoritos produtos={produtos} />
+        )}
+      </div>
+    </>
   );
 }
 

@@ -10,9 +10,12 @@
 
 	header {
 		width: -webkit-fill-available;
-		margin: -15px 0 0 0;
+		margin: auto;
 	}
 
+	.header-main {
+		height: 14vh;
+	}
 
 	header nav ul li {
 		width: 100%;
@@ -22,9 +25,20 @@
 		font-weight: 200;
 	}
 
-	.lista-planos {
-		width: 232px;
-		margin: 5px -1px 0 72px;
+	#banner {
+		margin-top: -206px;
+		margin-bottom: 300px;
+		/* margin-left: -22px; */
+		width: 99%;
+		/* transform: scale(0.9);*/
+	}
+
+	#conjunto-img-banner,
+	#conjunto-img-banner-alfa,
+	#conjunto-img-banner-bravo,
+	#conjunto-img-banner-charlie {
+		flex-direction: column;
+		align-items: center;
 	}
 
 	div div div h1 {
@@ -80,13 +94,16 @@
 		padding: 0;
 		margin: 0;
 	}
-	header{
-		width: max-content;
+
+	header {
+		width: auto;
 	}
-	.c-div-cardapio{
+
+	.c-div-cardapio {
 		margin: -253px 0 0 0;
 
 	}
+
 	.titulo-cardapio {
 		font-size: 100px;
 		color: white;
@@ -159,9 +176,11 @@
 		font-size: 24px;
 		margin: 84px 0 0 0;
 	}
-	.produtos-card h3{
+
+	.produtos-card h3 {
 		display: none;
 	}
+
 	.produtos-card p {
 		width: 158px;
 		margin: 61px 0 0 -27px;
@@ -174,6 +193,37 @@
 		margin: -15px 0 0 0;
 	}
 
+	#banner {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: fixed;
+		width: 100%;
+		padding-top: 100px;
+		margin: -188px 0 0 0;
+		z-index: -1;
+	}
+	#conjunto-img-banner,
+	#conjunto-img-banner-alfa,
+	#conjunto-img-banner-bravo,
+	#conjunto-img-banner-charlie {
+		padding: 15px;
+		position: absolute;
+		height: 80vh;
+	}
+	.cjt-bn-dv{
+		width: inherit;
+	}
+	.cjt-bn-dv .img-iim-g{
+		width: 300px;
+		height: 300px;
+	}
+	.cjt-bn-dv text{
+		width: 30%;
+	}
+	.titulo-cardapio{
+		margin-top: 520px;
+	}
 	nav ul {
 		display: flex;
 		justify-content: right;
@@ -188,10 +238,6 @@
 		padding: 5px;
 	}
 
-	nav ul li a:hover {
-		background-color: black;
-		border-radius: 15px;
-	}
 
 	.lojas-header {
 		background-color: rgb(0, 0, 0);

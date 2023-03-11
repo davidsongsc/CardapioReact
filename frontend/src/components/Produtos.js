@@ -1,14 +1,12 @@
 import React from 'react';
-function Produto_imagem(endereco_ip, nome_produto) {
-  let protocolo = "http://";
-  let end_img = ":5000/static/img/produtos/";
-  let tipo_img = ".png";
-  return protocolo + endereco_ip + end_img + nome_produto + tipo_img;
+import dados from '../configure.json';
+
+function Produto_imagem(nome_produto) {
+  return `http://${dados.ip}:5000/static/img/produtos/${nome_produto}.png`;;
 }
 
 function Produto({ produto }) {
-  const ip = "127.0.0.1"
-  const imagem = Produto_imagem(ip, produto.nomeproduto);
+  const imagem = Produto_imagem(produto.nomeproduto);
 
   return (
     <div className="cardapio-item">
