@@ -9,8 +9,7 @@ Flask ultiliza o ip deste arquivo json.
 
 - React
 - Flask
-- SQLite
-- Python
+
 ## Screenshots
 Desktop
 ![Tela inicial do cardápio](screenshots/projeto_imagem_novo1.png)
